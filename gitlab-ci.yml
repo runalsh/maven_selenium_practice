@@ -1,0 +1,22 @@
+stages:
+  - build
+  - test
+  - install
+
+clean:
+  image: maven:3.8.6-jdk-11
+  stage: build
+  script:
+    - mvn compile
+
+test:
+  image: maven:3.8.6-jdk-11
+  stage: test
+  script:
+    - mvn clean test
+
+install:
+  image: maven:3.8.6-jdk-11
+  stage: install
+  script:
+    - mvn install

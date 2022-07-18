@@ -1,0 +1,4 @@
+automationtests\seleniumTest.class
+automationtests\homeTest.class
+automationtests\personalTest.class
+automationtests\vehicleTest.class
